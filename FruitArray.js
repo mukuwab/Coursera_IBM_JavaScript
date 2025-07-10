@@ -17,4 +17,9 @@ console.log("3rd: "+fruits[2]);
 //Now we want to add a new fruit. Use the PUSH method
 
 fruits.push("cherry");
-console.log("4th: "+fruits[3]);
+console.log("\nAfter Adding Fruit\n4th: "+fruits[3]);
+
+
+//Now remove that last index using the pop method
+fruits.pop();//Will remove the newly added 'cherry' string in the last index
+console.log("\nAfter removing the last index (4th item)\n4th: "+fruits[3]+"\nThe cherry has been removed!");
