@@ -2,15 +2,16 @@
 
 function add (n,m){
     //function functionName(parameter1, parameter 2...)
+    //n and m are called arguments
     
     return n+m
-    //the output of the function will be the two parameters
+    //the output of the function will be the two arguments
     //if n and m are numbers, the function will add them
     //if n and m are strings, the function will concatonate the strings
 }//end function
 
 var x = add(1,2); //returns 3
-    //values can be entered in the 'slots' of the parameters, making 1 assigned to the n parameter and 2 assigned to the m parameter
+    //values can be entered in the 'slots' of the parameters, making 1 assigned to the n argument and 2 assigned to the m argument
 var y= add(1.23,3.45);//returns 4.68
 var z= add("hello","world");//returns "helloworld"
 
