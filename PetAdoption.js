@@ -12,8 +12,14 @@ function Pet(name, species, sex, age){
     this.describe = function(){
         console.log(`${this.name} is a ${this.age}-year old ${this.sex} ${this.species}`);
         //make sure to use the this keyword!
+    }//end.discribe
         
-    }//end this.describe
+    this.getName = function() {
+        
+        console.log(`\nThe name of this ${this.species} is ${this.name}.`);
+        
+    }//end getName
+        
         
 
 }//end function:Pet
@@ -25,7 +31,7 @@ function Pet(name, species, sex, age){
     new Pet("Mitten", "cat", "female", 2),
     new Pet("Opal", "cat", "female", 3),
     new Pet("Pecker", "bird", "male", 4),
-    new Pet("Apollo", "bird", "max", 4),
+    new Pet("Apollo", "bird", "male", 4),
       //Remember
             //{} = a plain object — just data, no constructor logic.
                 //dont use literals
@@ -36,3 +42,5 @@ function Pet(name, species, sex, age){
 AdoptablePets.forEach((pet)=>{
     pet.describe();
 });
+
+AdoptablePets[2].getName();
