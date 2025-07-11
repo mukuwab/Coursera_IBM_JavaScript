@@ -27,4 +27,17 @@ users.forEach((user) => {
     sendWelcomeEmail(user.email);
 });
 
-    
+//About .forEach()
+    //built in methid in Javascript
+    //loops through every element of an array
+    //users.forEach(...)-->take users array and do something for each user inside of it
+
+//Where does 'user' come from?
+    //user is just a placeholder name
+    //represents the current element in the array as .forEach() loops.
+    //So on each loop, user becomes:
+        //1st loop: { name: 'Alice', email: 'alice@example.com' }
+        //2nd loop: { name: 'Bob', email: 'bob@example.com' }
+        //3rd loop: { name: 'Charlie', email: 'charlie@example.com' }
+    //so user can be called anything
+
