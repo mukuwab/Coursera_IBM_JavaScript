@@ -7,21 +7,24 @@
 //Sends a welcome email to each user
 
 function sendWelcomeEmail (email){
-    console.log('welcome email sent to ${email}');
+    console.log(`welcome email sent to ${email}`);
+    //use backticks or else it won’t interpolate the variable 
 }//end sendWelcomeEmail
 const users = [
     //Creates an array called users containing name and email
-    {name: 'Alice', email: 'alice@example.com'}
-    {name: 'Bob', email: 'bob@example.com'}
-    {name: 'Charlie', email: 'charlie@example.com'}
+    {name: 'Alice', email: 'alice@example.com'},
+    {name: 'Bob', email: 'bob@example.com'},
+    {name: 'Charlie', email: 'charlie@example.com'},
+    //Note: make sure to put commas between the array elements
     
 ];//end array:users
 
-users.forEach(user) => {
+users.forEach((user) => {
+    //the arrow function needs parentheses around the parameter, and it must be inside the .forEach(...)
     //arrow function takes the current user object as a parameter
     //users.ForEach iterates through the array
     //Then calls the sendWelcome Email function with each iteration
-    snedWelcomeEmail(user.email);
-}
+    sendWelcomeEmail(user.email);
+});
 
     
