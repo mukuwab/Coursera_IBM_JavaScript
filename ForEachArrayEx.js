@@ -10,6 +10,7 @@ function sendWelcomeEmail (email){
     console.log('welcome email sent to ${email}');
 }//end sendWelcomeEmail
 const users = [
+    //Creates an array called users containing name and email
     {name: 'Alice', email: 'alice@example.com'}
     {name: 'Bob', email: 'bob@example.com'}
     {name: 'Charlie', email: 'charlie@example.com'}
@@ -17,6 +18,9 @@ const users = [
 ];//end array:users
 
 users.forEach(user) => {
+    //arrow function takes the current user object as a parameter
+    //users.ForEach iterates through the array
+    //Then calls the sendWelcome Email function with each iteration
     snedWelcomeEmail(user.email);
 }
 
