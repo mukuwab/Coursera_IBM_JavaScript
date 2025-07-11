@@ -39,3 +39,29 @@ numFruits = fruits.length;//To store new values within the numFruits variable
 console.log("\nThere are "+numFruits+" fruits!")
 
 //use a for loop to print out all fruits
+for(let i=0; i<fruits.length; i++){
+    
+    console.log(fruits[i])
+    //'i' will increment after every iteration of the loop
+    //the new value of i will act as the index
+    
+}//End for
+
+//use a for loop to remove three fruits from the row
+while (fruits.length > 3) {
+  fruits.pop();
+}
+
+console.log("\nAfter removing 3 fruits")
+
+for(let i=0; i<fruits.length; i++){
+    
+    console.log(fruits[i])
+    //'i' will increment after every iteration of the loop
+    //the new value of i will act as the index
+    
+}
+
+
+
+
