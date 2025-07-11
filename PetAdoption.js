@@ -7,22 +7,32 @@ function Pet(name, species, sex, age){
     this.sex = sex;
     this.age = age;
     
+    
+    
     this.describe = function(){
-        console.log(`${name} is a ${age}-year old ${sex} ${species}`);
-    }
+        console.log(`${this.name} is a ${this.age}-year old ${this.sex} ${this.species}`);
+        //make sure to use the this keyword!
+        
+    }//end this.describe
+        
+
 }//end function:Pet
 
-const AdoptablePets = [
+    const AdoptablePets = [
     
-    {name: "Martha", species: "dog", sex: "female", age: 2},
-    {name: "Sammy", species: "cat", sex: "male", age:5},
-    {name: "Mitten", species: "cat", sex: "female", age: 2},
-    {name: "Opal", species: "cat", sex: "female", age: 3},
-    {name: "Pecker", species: "bird", sex: "male", age: 4},
-    {name: "Apollo", species: "bird", sex: "max", age: 4},
-      
+    new Pet("Martha", "dog", "female", 2),
+    new Pet("Sammy", "cat", "male", 5),
+    new Pet("Mitten", "cat", "female", 2),
+    new Pet("Opal", "cat", "female", 3),
+    new Pet("Pecker", "bird", "male", 4),
+    new Pet("Apollo", "bird", "max", 4),
+      //Remember
+            //{} = a plain object — just data, no constructor logic.
+                //dont use literals
+                //Named parameters (name: ...) only work inside object literals {} — not when passing arguments to a function.
+            //new Pet(...) = an instance of the Pet constructor — it has .describe().
     ];
     
-AdoptablePets.forEach((Pet)=>{
-    describe();
+AdoptablePets.forEach((pet)=>{
+    pet.describe();
 });
