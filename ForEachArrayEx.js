@@ -31,6 +31,12 @@ users.forEach((user) => {
     //built in methid in Javascript
     //loops through every element of an array
     //users.forEach(...)-->take users array and do something for each user inside of it
+    //for each is just a built in for loop. It operates like:
+       // for (let i = 0; i < users.length; i++) {
+            // let user = users[i];
+            // sendWelcomeEmail(user.email);
+        //}
+
 
 //Where does 'user' come from?
     //user is just a placeholder name
@@ -41,3 +47,9 @@ users.forEach((user) => {
         //3rd loop: { name: 'Charlie', email: 'charlie@example.com' }
     //so user can be called anything
 
+//The arrow function
+    //is a shorthand way to write a function in Javascript
+    //This does the same thing
+        //users.forEach(function(user) {
+            // sendWelcomeEmail(user.email);
+        //});
