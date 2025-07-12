@@ -8,7 +8,9 @@ const employees = [
   {id: 3, name: 'Charlie', Eid: 'EMP003', 'Contact details': 'charlie@example.com', Role: 'Analyst', Designation: 'Data Analyst', Experience: '2 years'}
 ];
 
-const employee = employees.find((e) => e.id === 2);
+let employee = employees.find((e) => e.id === 2);
+//employees.find(placeHolderNameforArrayRowAKAalias)
+//array.find(function) --> argument of the find statement
 
 console.log(`Details of the employee:
 Name: ${employee.name}
