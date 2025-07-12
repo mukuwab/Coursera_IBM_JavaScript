@@ -15,13 +15,13 @@ const products = [
 ];
 
 function filterProductsByPriceRange(products, minPrice, maxPrice){
-    return products.filter(product) => product.price >= minPrice && product.price <= maxPrice);
+    return products.filter((product) => product.price >= minPrice && product.price <= maxPrice);
 }
 
 const minPrice = 100;//Minimum price threshold
 const maxPrice = 500; //Maximum price 
 
-const.filteredProducts = filterProductsByPriceRange(prodcutsm minPrice, maxPrice);
+const filteredProducts = filterProductsByPriceRange(products, minPrice, maxPrice);
 
 filteredProducts.forEach((product) =>{
     
